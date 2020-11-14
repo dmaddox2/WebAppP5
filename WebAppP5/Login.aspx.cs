@@ -12,7 +12,16 @@ namespace WebAppP5
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            HttpCookie myCookies = Request.Cookies["myCookieID"];
+            if ((myCookies == null) || (myCookies["Name"] == ""))
+            {
+                lblOutput.Text = "Welcome, new user";
+            }
+            else
+            {
+                lblOutput.Text = "Welcome, " + myCookies["Name"];
 
+            }
         }
 
         protected void btnMemberLogin_Click(object sender, EventArgs e)

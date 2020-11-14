@@ -28,6 +28,7 @@
         <asp:Button ID="btnMemberLogin" runat="server" OnClick="btnMemberLogin_Click" Text="Member Login" Width="136px" />
 &nbsp;
         <br />
+        <br />
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         <asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="Member Registratioon" />
     </form>
